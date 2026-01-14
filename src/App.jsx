@@ -32,7 +32,7 @@ function App() {
     <ReactLenis root options={lenisOptions}>
       <div className="bg-[#fbfbfd]">
         {/* The Navbar is fixed, so it stays on top of all sections */}
-        <Navbar />
+        {/* <Navbar /> */}
 
         <main>
           <Hero />
