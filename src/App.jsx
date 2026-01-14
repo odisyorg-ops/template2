@@ -12,6 +12,12 @@ import ProcessSection from './component/ProcessSection';
 import ContactStage from './component/ContactStage';
 import ContactSection from './component/ContactSection';
 import Footer from './component/Footer';
+import NewHero from './component/NreHero';
+import ServicesSection from './component/ServicesSection';
+import PortfolioSection from './component/PortfolioSection';
+import SocialProof from './component/SocialProof';
+import ProcessSectionTwo from './component/ProcessSectionTwo';
+import FooterTwo from './component/FooterTwo';
 
 function App() {
   // Lenis options for that signature Apple "heavy" scroll feel
@@ -41,6 +47,12 @@ function App() {
         </main>
 
         <Footer />
+        <NewHero></NewHero>
+        <ServicesSection></ServicesSection>
+        <PortfolioSection></PortfolioSection>
+        <SocialProof></SocialProof>
+        <ProcessSectionTwo></ProcessSectionTwo>
+        <FooterTwo></FooterTwo>
       </div>
     </ReactLenis>
   );
