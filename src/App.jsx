@@ -18,6 +18,11 @@ import PortfolioSection from './component/PortfolioSection';
 import SocialProof from './component/SocialProof';
 import ProcessSectionTwo from './component/ProcessSectionTwo';
 import FooterTwo from './component/FooterTwo';
+import HeroBanner from './component/HeroBanner';
+import ResourceIndex from './component/ResourceIndex';
+import FrameworkSection from './component/FrameworkSection';
+import ResourceSpotlight from './component/ResourceSpotlight';
+import PortHero from './component/PortHero';
 
 function App() {
   // Lenis options for that signature Apple "heavy" scroll feel
@@ -32,9 +37,10 @@ function App() {
     <ReactLenis root options={lenisOptions}>
       <div className="bg-[#fbfbfd]">
         {/* The Navbar is fixed, so it stays on top of all sections */}
-        {/* <Navbar /> */}
+        <Navbar />
 
         <main>
+          {/* <PortHero></PortHero> */}
           <Hero />
           <AboutSection />
           <ServicesGrid />
@@ -47,12 +53,16 @@ function App() {
         </main>
 
         <Footer />
-        <NewHero></NewHero>
+        {/* <NewHero></NewHero>
         <ServicesSection></ServicesSection>
         <PortfolioSection></PortfolioSection>
         <SocialProof></SocialProof>
         <ProcessSectionTwo></ProcessSectionTwo>
         <FooterTwo></FooterTwo>
+        <HeroBanner></HeroBanner>
+        <ResourceIndex></ResourceIndex>
+        <FrameworkSection></FrameworkSection>
+        <ResourceSpotlight></ResourceSpotlight> */}
       </div>
     </ReactLenis>
   );

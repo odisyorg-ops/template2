@@ -40,11 +40,10 @@ const NewHero = () => {
     <section className="relative min-h-screen flex flex-col items-center justify-center bg-white dark:bg-[#0A0A0A] px-6 overflow-hidden transition-colors duration-500">
       
       {/* --- FIXED NAVIGATION --- */}
-      <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-4 md:px-12 ${
+      {/* <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 py-4 md:px-12 ${
         isScrolled ? 'bg-white/80 dark:bg-[#0A0A0A]/80 backdrop-blur-md border-b border-zinc-100 dark:border-zinc-900' : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          {/* Logo */}
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -53,7 +52,6 @@ const NewHero = () => {
             ODISY<span className="text-[#D1FF00]">.</span>
           </motion.div>
 
-          {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link, i) => (
               <motion.a
@@ -76,12 +74,11 @@ const NewHero = () => {
             </motion.button>
           </div>
 
-          {/* Mobile Toggle */}
           <button className="md:hidden text-black dark:text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X /> : <Menu />}
           </button>
         </div>
-      </nav>
+      </nav> */}
 
       {/* --- HERO CONTENT --- */}
       <div className="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none" 
